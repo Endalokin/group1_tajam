@@ -1,3 +1,4 @@
+/*NORA CSS*/
 
 button {
     padding: 15px;
@@ -47,6 +48,7 @@ section * {
     padding-top: 1px;
 }
 
+/*Rick CSS*/
 
 .footer-oben {
     display: flex;
@@ -155,3 +157,101 @@ footer {
     display: flex;
     justify-content: right;
 }
+
+/*Björn CSS*/
+
+html, body{
+    min-height: 100vh;
+    height: auto;
+    padding:0;
+    margin:0;
+    font-family: 'roboto';
+}
+.headercontent h1 {
+    font-style: italic;
+    font-family: roboto;
+    font-size: 3rem;
+}
+
+
+.headercontent p, p {
+    font-family: 'roboto';
+    font-weight: 300;
+    line-height: 1.9rem;
+    font-size: 1.3rem;
+}
+
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    line-height: 1.6rem;
+}
+
+.header  {
+display: flex;
+justify-content: center;
+color: white;
+background-image: url('./img/design-assets/bgk-header.png');
+background-size: cover;
+}
+
+.headercontent {
+    text-align: center;
+    width: 55%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+
+.navwrapper {
+    background-color: #2B2B4D;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 80px;
+}
+
+a {
+    display: flex;
+    gap: 0.5rem;
+    text-decoration: none ;
+}
+
+span {
+    align-self: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #27A7B8;
+    padding-left: 0.5rem;
+}
+
+ul {
+    display: flex;
+    gap: 2.7rem;
+}
+
+li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+hr {
+    width: 10%;
+    background-color: #27A7B8;
+    border: none;
+    height: 2px;
+    margin-bottom: 2rem;
+}
+
+img {
+    align-self: center;
+}
+
