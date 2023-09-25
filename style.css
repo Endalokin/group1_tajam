@@ -173,7 +173,6 @@ html, body{
     font-size: 3rem;
 }
 
-
 .headercontent p, p {
     font-family: 'roboto';
     font-weight: 300;
@@ -181,7 +180,7 @@ html, body{
     font-size: 1.3rem;
 }
 
-}
+
 .wrapper {
     display: flex;
     justify-content: center;
