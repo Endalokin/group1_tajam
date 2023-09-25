@@ -56,7 +56,7 @@ html, body{
     padding:0;
     margin:0;
     font-family: 'roboto';
-
+}
 .headercontent h1 {
     font-style: italic;
     font-family: roboto;
@@ -65,7 +65,7 @@ html, body{
 
 
 .headercontent p, p {
-    font-family: roboto;
+    font-family: 'roboto';
     font-weight: 300;
     line-height: 1.9rem;
     font-size: 1.3rem;
