@@ -48,6 +48,116 @@ section * {
     padding-top: 1px;
 }
 
+/*Rick CSS*/
+
+.footer-oben {
+    display: flex;
+    text-align: center;
+    min-height: 654px;
+    background-color: white;
+    color: black;
+}
+
+.headline-formular {
+    border: 2px solid green;
+    height: 20px;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+}
+
+.formular {
+    width: 50%;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+form {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    border: 5px solid green;
+    padding-top: 1em;
+    width: 50%;
+    height: 50%;
+}
+
+.clients {
+    border: 2px solid green;
+    width: 50%;
+    padding-top: 1em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.headline-logos {
+    border: 2px solid green;
+    height: 20px;
+    display: flex;
+    text-align: left;
+    font-size: large;
+    font-weight: 700;
+}
+
+.logos {
+    border: 2px solid green;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 0.25fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.img-logos {
+    width: 100px;
+    height: 50px;
+    flex-basis: 15%;
+    margin: 1em auto;
+    border: 2px solid green;
+}
+
+footer {
+    background-image: url(img/design-assets/bgk-footer.png);
+    min-height: 400px;
+    color: white;
+}
+
+.footer-unten {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.inline-block-footer {
+    display: inline;
+    text-align: top;
+}
+
+.terms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    height: 2em;
+    width: 2em;
+}
+
+.end-line {
+    display: flex;
+}
+
+.copyright {
+    display: flex;
+    justify-content: right;
+}
+
 /*Björn CSS*/
 
 html, body{
@@ -144,3 +254,4 @@ hr {
 img {
     align-self: center;
 }
+
