@@ -26,6 +26,10 @@ section * {
     color: white;
 }
 
+.dark-bg .separator {
+    background-color: white;
+}
+
 .icon-button {
  max-width: 100px;
  padding: 20px;   
@@ -33,11 +37,26 @@ section * {
 
 #story {
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
-#story div  {
+#story .flex-img {
+    flex-shrink: 2;
+    flex-grow: 1; 
+}
+
+#story img  {
     width: 100%;
-    flex-shrink: 1;
+    max-width: 235px;
+ 
+}
+
+#story .flex-text {
+    max-width: 850px;
+}
+
+#story .flex-text p {
+    text-align: left;
 }
 
 #video {
@@ -51,8 +70,11 @@ section * {
 }
 
 .separator {
-    padding-top: 1px;
+    height: 1px;
+    width: 40px;
+    opacity: 0.4;
 }
+
 
 /*Rick CSS*/
 
