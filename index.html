@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -18,14 +19,18 @@
             <span>tajam</span>
             </a>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Expertise</li>
-                <li>Teams</li>
-                <li>Works</li>
-                <li>People Say</li>
-                <li>Contact</li>
+                <a href="#home"><li>Home</li></a>
+                <a href="#story"><li>About</li></a>
+                <a href="#expertise"><li>Expertise</li></a>
+                <a href="#team"><li>Teams</li></a>
+                <a href="#expertise"><li>Works</li></a>
+                <a href="#contact"><li>People Say</li></a>
+                <a href="#contact"><li>Contact</li></a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
             </ul>
+           
     </nav>
 </div>
 
@@ -57,7 +62,7 @@
             <a href=""><img src="img/design-assets/svg/play.svg" class = "icon-button" alt="play-button"></a>
             <p class="white">WATCH OUR STORY</p>
         </section>
-        <section>
+        <section id="expertise">
             <h2>Expertise</h2>
             <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
             <div class="separator"></div>
@@ -75,7 +80,7 @@
     <footer>
       <div class="footer-oben">
         <div class="formular">
-          <div class="headline-formular">GIVE US A GOOD NEWS</div>
+          <div id="contact" class="headline-formular">GIVE US A GOOD NEWS</div>
           <form action="">
             <input type="text" placeholder="Name">
             <input type="email" placeholder="Email">
