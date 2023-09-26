@@ -249,13 +249,16 @@ p {
   justify-content: center;
   line-height: 1.6rem;
 }
+.navis {
+background-image: url('./img/design-assets/bgk-header.png');
+background-size: cover;
+}
 
-.header {
-  display: flex;
-  justify-content: center;
-  color: white;
-  background-image: url("./img/design-assets/bgk-header.png");
-  background-size: cover;
+.header  {
+display: flex;
+justify-content: center;
+color: white;
+
 }
 
 .headercontent {
@@ -266,10 +269,9 @@ p {
 }
 
 .navwrapper {
-  background-color: #2b2b4d;
-  display: flex;
-  justify-content: center;
-  padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
 }
 nav {
   display: flex;
@@ -315,3 +317,9 @@ hr {
 img {
   align-self: center;
 }
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 480px)  {
+
+}  
