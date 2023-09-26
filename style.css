@@ -186,13 +186,16 @@ html, body{
     justify-content: center;
     line-height: 1.6rem;
 }
+.navis {
+background-image: url('./img/design-assets/bgk-header.png');
+background-size: cover;
+}
 
 .header  {
 display: flex;
 justify-content: center;
 color: white;
-background-image: url('./img/design-assets/bgk-header.png');
-background-size: cover;
+
 }
 
 .headercontent {
@@ -204,7 +207,6 @@ background-size: cover;
 
 
 .navwrapper {
-    background-color: #2B2B4D;
     display: flex;
     justify-content: center;
     padding-top: 1rem;
@@ -254,3 +256,8 @@ img {
     align-self: center;
 }
 
+/*MEDIA QUERIES*/
+
+@media screen (max-width: 480px)  {
+
+}  
