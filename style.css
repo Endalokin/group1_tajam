@@ -3,6 +3,7 @@
 h2 {
   text-transform: uppercase;
   font-family: "Playfair Display";
+  margin-bottom: 0;
 }
 
 h3 {
@@ -46,6 +47,7 @@ section * {
 #story {
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 #story .flex-img {
@@ -60,16 +62,19 @@ section * {
 
 #story .flex-text {
   max-width: 915px;
+  flex-basis: 40em;
+  margin: 1em;
 }
 
-#story .flex-text p {
+#story .flex-text p, h2{
   text-align: left;
 }
 
 #video {
   background-image: url(img/design-assets/bgk-middle.png);
-  min-height: 200px;
+  min-height: 550px;
   background-size: cover;
+  justify-content: center;
 }
 
 #team {
@@ -90,8 +95,10 @@ section * {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1px;
-  margin: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   background-color: lightgray;
+  width: 100%;
 }
 
 .grid-3 > div {
@@ -103,16 +110,28 @@ section * {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  margin: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
 }
 
 .grid-4 > div {
   border: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 10px;
+}
+
+.grid-4 > div > div {
+  padding: 10px 10px;
 }
 
 .grid-4 img {
-  height: 100px;
+  height: 170px;
+  width: 100%;
+  background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+  
+  
 }
 
 /*Rick CSS*/
