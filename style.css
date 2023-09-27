@@ -1,51 +1,180 @@
 /*NORA CSS*/
 
-button {
-    padding: 15px;
-    color: #00e0d0;
-    border-color: #00e0d0;
-    background-color: rgba(255, 255, 255, 0);
-    box-shadow: none;
+h2 {
+  text-transform: uppercase;
+  font-family: "Playfair Display";
+  margin-bottom: 0;
 }
 
+h3 {
+  text-transform: uppercase;
+}
+
+button {
+  padding: 15px;
+  color: #00e0d0;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #00e0d0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
 section {
-    padding: 70px 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 4em 20%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 section * {
-    text-align: center;
+  text-align: center;
 }
 
+.dark-bg *:not(button) {
+  color: white;
+}
 
-.dark-bg * {
-    color: white;
+.dark-bg .separator {
+  background-color: white;
 }
 
 .icon-button {
- max-width: 100px;
- padding: 20px;   
+  max-width: 100px;
+  padding: 20px;
 }
 
 #story {
-    flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#story > div {
+  flex-grow: 1;
+}
+
+#story img {
+  width: 100%;
+  max-width: 235px;
+}
+
+#story .flex-text {
+  flex-basis: 40em; 
+  margin: 2em;
+}
+
+#story .flex-text p, h2{
+  text-align: left;
 }
 
 #video {
-    background-image: url(img/design-assets/bgk-middle.png);
-    min-height: 200px;
+  background-image: url(img/design-assets/bgk-middle.png);
+  min-height: 550px;
+  background-size: cover;
+  justify-content: center;
+  background-position: center;
 }
 
 #team {
-    background-image: url(img/design-assets/bgk-header.png);
-    min-height: 400px;
+  background-image: url(img/design-assets/bgk-header.png);
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
 }
 
 .separator {
-    padding-top: 1px;
+  height: 1px;
+  width: 40px;
+  opacity: 0.4;
+  margin: 0px 0px 20px 0px;
+  background-color: black;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: lightgray;
+  width: 100%;
+}
+
+.grid-3 > div {
+  background-color: white;
+  padding: 20px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.grid-4 > div {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.grid-4 > div > div {
+  padding: 10px 10px;
+}
+
+.grid-4 img {
+  height: 170px;
+  width: 100%;
+  background-color: white;
+}
+
+@media screen and (max-width: 1280px) {
+  section {
+    padding: 3.5em 10%;
+    width: 80%;
+  }
+
+  .grid-4 p, .grid-3 p {
+    font-size: 1em;
+  }
+
+  #story {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  section {
+    padding: 2.5em 5%;
+    width: 90%;
+  }
+
+  #story .flex-text p {
+    text-align: justify;
+  }  
+  .grid-4, .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-4 p, .grid-3 p {
+    font-size: 1em;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+  section {
+    padding: 2.5em 2.5%;
+    width: 95%;
+  }
+  
+  .grid-4, .grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-4 p, .grid-3 p {
+    font-size: 1em;
+  }
 }
 
 /*Rick CSS*/
@@ -227,97 +356,170 @@ blockquote {
 
 /*Björn CSS*/
 
-html, body{
-    min-height: 100vh;
-    height: auto;
-    padding:0;
-    margin:0;
-    font-family: 'roboto';
+html,
+body {
+  min-height: 100vh;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  font-family: "roboto";
 }
 .headercontent h1 {
-    font-style: italic;
-    font-family: roboto;
-    font-size: 3rem;
+  /* font-style: italic; */
+  font-family: "Playfair Display";
+  font-size: 3rem;
 }
 
-
-.headercontent p, p {
-    font-family: 'roboto';
-    font-weight: 300;
-    line-height: 1.9rem;
-    font-size: 1.3rem;
+.headercontent p,
+p {
+  font-family: "roboto";
+  font-weight: 300;
+  line-height: 1.9rem;
+  font-size: 1.3rem;
 }
 
 .wrapper {
-    display: flex;
-    justify-content: center;
-    line-height: 1.6rem;
+  display: flex;
+  justify-content: center;
+  line-height: 1.6rem;
+}
+.navis {
+background-image: url('./img/design-assets/bgk-header.png');
+background-size: cover;
 }
 
 .header  {
-    display: flex;
-    justify-content: center;
-    color: white;
-    background-image: url('./img/design-assets/bgk-header.png');
-    background-size: cover;
+display: flex;
+justify-content: center;
+color: white;
 }
 
 .headercontent {
-    text-align: center;
-    width: 55%;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+  text-align: center;
+  width: 55%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
-
 .navwrapper {
-    background-color: #2B2B4D;
     display: flex;
     justify-content: center;
     padding-top: 1rem;
 }
 nav {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    height: 80px;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  height: 80px;
 }
 
 a {
-    display: flex;
-    gap: 0.5rem;
-    text-decoration: none ;
+  display: flex;
+  gap: 0.5rem;
+  text-decoration: none;
 }
 
 span {
-    align-self: center;
-    font-size: 1.8rem;
-    font-weight: 300;
-    color: #27A7B8;
-    padding-left: 0.5rem;
+  align-self: center;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #27a7b8;
+  padding-left: 0.5rem;
 }
 
 ul {
-    display: flex;
-    gap: 2.7rem;
+  display: flex;
+  gap: 2.7rem;
 }
 
-li {
-    list-style-type: none;
-    color: white;
-    text-transform: uppercase;
-    align-self: center;
+
+
+li  {
+  list-style-type: none;
+  text-transform: uppercase;
+  align-self: center;
 }
 
+li a {
+  color: white;
+}
 hr {
-    width: 10%;
-    background-color: #27A7B8;
-    border: none;
-    height: 2px;
-    margin-bottom: 2rem;
+  width: 10%;
+  background-color: #27a7b8;
+  border: none;
+  height: 2px;
+  margin-bottom: 2rem;
 }
 
 img {
-    align-self: center;
+  align-self: center;
+}
+a.icon {
+  display: none;
 }
 
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 600px)  {
+
+  .icon {
+    align-self: center;
+    color: #27a7b8;
+    transform: scale(2);
+    padding-right: 1.5rem;
+}
+
+
+    .headercontent {
+       
+        width: 90%;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    ul a
+    {display:none;}
+
+    .topnav a.icon {
+      float: right;
+      display: inline-block;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+}  
+ 
+.topnav.responsive .logo {
+  margin-top: 0.9rem;
+}
+.logo-tajam {
+    margin-left: 1rem;
+}
+
+.topnav.responsive {
+    display: block;
+    height: 380px;
+}
+ 
+
+.topnav.responsive ul {
+display: block;
+margin-top: 1rem;
+background-color: #413d4b;
+padding: 1.5rem 1rem;
+
+}
+.topnav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 45px;
+}
+.topnav.responsive ul li a {
+ display: block;
+ padding: 0.8rem;
+}
+
+}

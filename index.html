@@ -2,34 +2,39 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Group-Project</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group-Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet" />
 </head>
 
 <body>
-  <div class="navwrapper">
-    <nav>
-      <a href="#home">
-        <img src="img\design-assets\png\logo.png" />
-        <span>tajam</span>
-      </a>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Expertise</li>
-        <li>Teams</li>
-        <li>Works</li>
-        <li>People Say</li>
-        <li>Contact</li>
-      </ul>
+<div class="navis">
+<div class="navwrapper">
+    <nav class="topnav" id="myTopnav">
+        <a class="logo" href="#home">
+            <img class="logo-tajam" src="img\design-assets\png\logo.png">
+            <span>tajam</span>
+            </a>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#story">About</a></li>
+              <li><a href="#expertise">Expertise</a></li>
+              <li><a href="#team">Teams</a></li>
+              <li><a href="#expertise">Works</a></li>
+              <li><a href="#contact">People Say</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+              </a>
     </nav>
-  </div>
-
-  <header id="home" class="header">
+</div>
+<header id="home" class="header">
     <div class="headercontent">
       <h1>We Are Awesome Creative Agency</h1>
       <hr />
@@ -45,47 +50,127 @@
       <button>Learn More</button>
     </div>
   </header>
-
-  <main>
-    <section class="img-txt-butt" id="story">
-      <img src="img/design-assets/png/logo-big.png" alt="Logo" />
-      <div>
-        <h2>Our Story</h2>
-        <p>
-          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
-          velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-          auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-          Duis sed odio sit amet nibh vulputate cursus
-        </p>
-        <p>
-          Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
-          ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-          per inceptos himenaeos.
-        </p>
-        <button>Learn more</button>
-      </div>
-    </section>
-    <section class="full-video dark-bg" id="video">
-      <a href=""><img src="img/design-assets/svg/play.svg" class="icon-button" alt="play-button" /></a>
-      <p class="white">WATCH OUR STORY</p>
-    </section>
-    <section>
-      <h2>Expertise</h2>
-      <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
-      <div class="separator"></div>
-      <div></div>
-    </section>
-    <section class="dark-bg" id="team">
-      <h2>MEET OUR AMAZING TEAM</h2>
-      <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
-      <div class="separator"></div>
-      <div></div>
-      <p>Become part of our dream team, let's join us!</p>
-      <button>WE ARE HIRING</button>
-    </section>
-  </main>
-  <footer>
+    </div>
+    <main>
+        <section class="img-txt-butt" id="story">
+            <div class="flex-img">
+                <img src="img/design-assets/png/logo-big.png" alt="Logo" />
+            </div>
+            <div class="flex-text">
+                <h2>Our Story</h2>
+                <p>
+                    This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                    velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+                    auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                    Duis sed odio sit amet nibh vulputate cursus
+                </p>
+                <p>
+                    Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
+                    ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                    per inceptos himenaeos.
+                </p>
+                <button>Learn more</button>
+            </div>
+        </section>
+        <section class="full-video dark-bg" id="video">
+            <a href=""><img src="img/design-assets/svg/play.svg" class="icon-button" alt="play-button" /></a>
+            <p class="white">WATCH OUR STORY</p>
+        </section>
+        <section id="expertise">
+            <h2>Expertise</h2>
+            <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+            <div class="separator"></div>
+            <div class="grid-3">
+                <div>
+                    <img src="img/design-assets/png/screen.png" alt="screen-icon" />
+                    <h3>Web Design &amp; Development</h3>
+                    <p>
+                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                        velit auctor aliquet Aenean.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/design-assets/png/pen.png" alt="pen-icon" />
+                    <h3>Branding Identity</h3>
+                    <p>
+                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                        velit auctor aliquet Aenean.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/design-assets/png/mobile.png" alt="mobile-icon" />
+                    <h3>Mobile App</h3>
+                    <p>
+                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                        velit auctor aliquet Aenean.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/design-assets/png/graph.png" alt="chart-icon" />
+                    <h3>Search Engine Optimization</h3>
+                    <p>
+                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                        velit auctor aliquet Aenean.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/design-assets/png/gameboy.png" alt="gameboy-icon" />
+                    <h3>Game Development</h3>
+                    <p>
+                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                        velit auctor aliquet Aenean.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/design-assets/png/heart.png" alt="heart-icon" />
+                    <h3>Made with Love</h3>
+                    <p>
+                        This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                        velit auctor aliquet Aenean.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="dark-bg" id="team">
+            <h2>MEET OUR AMAZING TEAM</h2>
+            <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+            <div class="separator"></div>
+            <div class="grid-4">
+                <div>
+                    <img src="" alt="" />
+                    <div>
+                        <h3>Semf Ucuk</h3>
+                        <p>CEO &amp; FOUNDER</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="" alt="" />
+                    <div>
+                        <h3>Dik Adalin</h3>
+                        <p>ENGINEERING</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="" alt="" />
+                    <div>
+                        <h3>Jeng Kol</h3>
+                        <p>DESIGNER</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="" alt="" />
+                    <div>
+                        <h3>Pet Romak</h3>
+                        <p>MARKETING</p>
+                    </div>
+                </div>
+            </div>
+            <p>Become part of our dream team, let's join us!</p>
+            <button>WE ARE HIRING</button>
+        </section>
+    </main>
+  <footer id="contact">
     <div class="footer-oben">
       <div class="formular">
         <div class="headline-formular">GIVE US A GOOD NEWS</div>
@@ -103,24 +188,24 @@
       <div class="clients">
         <div class="headline-logos">OUR HAPPY CLIENT</div>
         <div class="logos">
-          <img src="/img/design-assets/png/Zara_Logo.png" alt="logo_zara" class="img-logos" />
-          <img src="/img/design-assets/png/Logo_of_Mango_(new).png" alt="logo_mango" class="img-logos" />
-          <img src="/img/design-assets/png/1280px-Barneys_New_York_Logo.png" alt="logo_barneys-new-york"
+          <img src="img/design-assets/png/Zara_Logo.png" alt="logo_zara" class="img-logos" />
+          <img src="img/design-assets/png/Logo_of_Mango_(new).png" alt="logo_mango" class="img-logos" />
+          <img src="img/design-assets/png/1280px-Barneys_New_York_Logo.png" alt="logo_barneys-new-york"
             class="img-logos" />
-          <img src="/img/design-assets/png/1280px-Gucci_Logo.png" alt="logo_gucci" class="img-logos" />
-          <img src="/img/design-assets/png/Calvin_klein_logo.png" alt="logo_calvin-klein" class="img-logos" />
-          <img src="/img/design-assets/png/1280px-Logo_NIKE.png" alt="logo_nike" class="img-logos" />
-          <img src="/img/design-assets/png/Converse_logo.png" alt="logo_converse" class="img-logos" />
-          <img src="/img/design-assets/png/Puma_Logo.png" alt="logo_puma" class="img-logos" />
-          <img src="/img/design-assets/png/1280px-Levi's_logo.png" alt="logo_levis" class="img-logos" />
-          <img src="/img/design-assets/png/Billabong.png" alt="logo_billabong" class="img-logos" />
+          <img src="img/design-assets/png/1280px-Gucci_Logo.png" alt="logo_gucci" class="img-logos" />
+          <img src="img/design-assets/png/Calvin_klein_logo.png" alt="logo_calvin-klein" class="img-logos" />
+          <img src="img/design-assets/png/1280px-Logo_NIKE.png" alt="logo_nike" class="img-logos" />
+          <img src="img/design-assets/png/Converse_logo.png" alt="logo_converse" class="img-logos" />
+          <img src="img/design-assets/png/Puma_Logo.png" alt="logo_puma" class="img-logos" />
+          <img src="img/design-assets/png/1280px-Levi's_logo.png" alt="logo_levis" class="img-logos" />
+          <img src="img/design-assets/png/Billabong.png" alt="logo_billabong" class="img-logos" />
         </div>
       </div>
     </div>
     <div class="footer-unten">
       <div class="footer-content">
         <div class="team-info">
-          <img src="/img/design-assets/png/logo.png" alt="logo-tajam" class="inline-block-footer" />
+          <img src="img/design-assets/png/logo.png" alt="logo-tajam" class="inline-block-footer" />
           <p class="inline-block-footer"><span>tajam</span></p>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
@@ -131,27 +216,27 @@
         <div class="location">
           <p class="content-header">OUR STUDIO</p>
           <br />
-          <img src="/img/design-assets/png/big104.png" alt="location-symbol" class="location-img"/>
+          <img src="img/design-assets/png/big104.png" alt="location-symbol" class="location-img"/>
           <blockquote>Ruko cucruk, J. Radio luar dalem jos</blockquote>
           <p class="atab"><blockquote>No.12 - 13, Kalideres - Jakarta Barat</blockquote></p>
           <p class="atab"><blockquote>11480 - Indonesia</blockquote></p>
           <br />
           <br />
-          <img src="/img/design-assets/png/phone351.png" alt="phone" /><blockquote>(+62)
+          <img src="img/design-assets/png/phone351.png" alt="phone" /><blockquote>(+62)
           21-2224 3333 </blockquote>
         </div>
         <div class="search">
           <p class="content-header">STAY IN TOUCH</p>
           <br />
           <input type="email" placeholder="Subscribe our newsletter" class="newsletter" />
-          <button class="papper"><img src="/img/design-assets/png/paper122.png" alt="papper"></button>
+          <button class="papper"><img src="img/design-assets/png/paper122.png" alt="papper"></button>
           <div class="socials">
-            <img src="/img/design-assets/png/facebook.png" alt="facebook" />
-            <img src="/img/design-assets/png/twitter.png" alt="twitter" />
-            <img src="/img/design-assets/png/dribbble.png" alt="dribble" />
-            <img src="/img/design-assets/png/instagram.png" alt="instagram" />
-            <img src="/img/design-assets/png/gplus.png" alt="gplus" />
-            <img src="/img/design-assets/png/youtube.png" alt="youtube" />
+            <img src="img/design-assets/png/facebook.png" alt="facebook" />
+            <img src="img/design-assets/png/twitter.png" alt="twitter" />
+            <img src="img/design-assets/png/dribbble.png" alt="dribble" />
+            <img src="img/design-assets/png/instagram.png" alt="instagram" />
+            <img src="img/design-assets/png/gplus.png" alt="gplus" />
+            <img src="img/design-assets/png/youtube.png" alt="youtube" />
           </div>
         </div>
       </div>
@@ -169,6 +254,16 @@
       </div>
     </div>
   </footer>
+<script>
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 
 </html>
