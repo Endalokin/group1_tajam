@@ -432,13 +432,17 @@ ul {
   gap: 2.7rem;
 }
 
-li {
+
+
+li  {
   list-style-type: none;
-  color: white;
   text-transform: uppercase;
   align-self: center;
 }
 
+li a {
+  color: white;
+}
 hr {
   width: 10%;
   background-color: #27a7b8;
@@ -450,15 +454,22 @@ hr {
 img {
   align-self: center;
 }
-
-.icon {
-    width:0;
-    visibility: hidden;
+a.icon {
+  display: none;
 }
+
 
 /*MEDIA QUERIES*/
 
-@media only screen and (max-width: 1000px)  {
+@media screen and (max-width: 600px)  {
+
+  .icon {
+    align-self: center;
+    color: #27a7b8;
+    transform: scale(2);
+    padding-right: 1.5rem;
+}
+
 
     .headercontent {
        
@@ -467,10 +478,48 @@ img {
         margin-bottom: 5rem;
     }
 
+    ul a
+    {display:none;}
+
+    .topnav a.icon {
+      float: right;
+      display: inline-block;
+    }
     nav {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        height: 80px;
-  }  
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+}  
+ 
+.topnav.responsive .logo {
+  margin-top: 0.9rem;
+}
+.logo-tajam {
+    margin-left: 1rem;
+}
+
+.topnav.responsive {
+    display: block;
+    height: 380px;
+}
+ 
+
+.topnav.responsive ul {
+display: block;
+margin-top: 1rem;
+background-color: #413d4b;
+padding: 1.5rem 1rem;
+
+}
+.topnav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 45px;
+}
+.topnav.responsive ul li a {
+ display: block;
+ padding: 0.8rem;
+}
+
 }

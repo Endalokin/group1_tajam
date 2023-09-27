@@ -15,27 +15,26 @@
 <body>
 <div class="navis">
 <div class="navwrapper">
-    <nav>
-        <a href="#home">
-            <img src="img\design-assets\png\logo.png">
+    <nav class="topnav" id="myTopnav">
+        <a class="logo" href="#home">
+            <img class="logo-tajam" src="img\design-assets\png\logo.png">
             <span>tajam</span>
             </a>
             <ul>
-                <a href="#home"><li>Home</li></a>
-                <a href="#story"><li>About</li></a>
-                <a href="#expertise"><li>Expertise</li></a>
-                <a href="#team"><li>Teams</li></a>
-                <a href="#expertise"><li>Works</li></a>
-                <a href="#contact"><li>People Say</li></a>
-                <a href="#contact"><li>Contact</li></a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-        </ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#story">About</a></li>
+              <li><a href="#expertise">Expertise</a></li>
+              <li><a href="#team">Teams</a></li>
+              <li><a href="#expertise">Works</a></li>
+              <li><a href="#contact">People Say</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+              </a>
     </nav>
-  </div>
-
-  <header id="home" class="header">
+</div>
+<header id="home" class="header">
     <div class="headercontent">
       <h1>We Are Awesome Creative Agency</h1>
       <hr />
@@ -78,7 +77,7 @@
             <a href=""><img src="img/design-assets/svg/play.svg" class="icon-button" alt="play-button" /></a>
             <p class="white">WATCH OUR STORY</p>
         </section>
-        <section>
+        <section id="expertise">
             <h2>Expertise</h2>
             <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
             <div class="separator"></div>
@@ -171,7 +170,7 @@
             <button>WE ARE HIRING</button>
         </section>
     </main>
-  <footer>
+  <footer id="contact">
     <div class="footer-oben">
       <div class="formular">
         <div class="headline-formular">GIVE US A GOOD NEWS</div>
@@ -255,6 +254,16 @@
       </div>
     </div>
   </footer>
+<script>
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 
 </html>
