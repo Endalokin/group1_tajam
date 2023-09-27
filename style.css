@@ -20,7 +20,7 @@ button {
 }
 
 section {
-  padding: 70px 20%;
+  padding: 4em 20%;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -47,12 +47,10 @@ section * {
 
 #story {
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
-#story .flex-img {
-  flex-shrink: 2;
+#story > div {
   flex-grow: 1;
 }
 
@@ -62,9 +60,8 @@ section * {
 }
 
 #story .flex-text {
-  max-width: 915px;
-  flex-basis: 40em;
-  margin: 1em;
+  flex-basis: 40em; 
+  margin: 2em;
 }
 
 #story .flex-text p, h2{
@@ -76,12 +73,14 @@ section * {
   min-height: 550px;
   background-size: cover;
   justify-content: center;
+  background-position: center;
 }
 
 #team {
   background-image: url(img/design-assets/bgk-header.png);
   min-height: 400px;
   background-size: cover;
+  background-position: center;
 }
 
 .separator {
@@ -131,12 +130,29 @@ section * {
 }
 
 @media screen and (max-width: 1280px) {
+  section {
+    padding: 3.5em 10%;
+    width: 80%;
+  }
+
   .grid-4 p, .grid-3 p {
     font-size: 1em;
+  }
+
+  #story {
+    flex-wrap: wrap;
   }
 }
 
 @media screen and (max-width: 760px) {
+  section {
+    padding: 2.5em 5%;
+    width: 90%;
+  }
+
+  #story .flex-text p {
+    text-align: justify;
+  }  
   .grid-4, .grid-3 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -147,7 +163,12 @@ section * {
   
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
+  section {
+    padding: 2.5em 2.5%;
+    width: 95%;
+  }
+  
   .grid-4, .grid-3 {
     grid-template-columns: repeat(1, 1fr);
   }
