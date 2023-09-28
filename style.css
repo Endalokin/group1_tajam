@@ -469,27 +469,22 @@ a.icon {
     transform: scale(2);
     padding-right: 1.5rem;
 }
-
-
     .headercontent {
-       
         width: 90%;
         margin-top: 5rem;
         margin-bottom: 5rem;
     }
-
-    ul a
-    {display:none;}
-
-    .topnav a.icon {
-      float: right;
-      display: inline-block;
+    ul a {
+      display:none;
     }
+    .topnav a.icon {
+      display: block;
+    }
+
     nav {
       display: flex;
       justify-content: space-between;
       width: 100%;
-
 }  
  
 .topnav.responsive .logo {
@@ -498,19 +493,15 @@ a.icon {
 .logo-tajam {
     margin-left: 1rem;
 }
-
 .topnav.responsive {
     display: block;
     height: 380px;
 }
- 
-
 .topnav.responsive ul {
 display: block;
 margin-top: 1rem;
 background-color: #413d4b;
 padding: 1.5rem 1rem;
-
 }
 .topnav.responsive a.icon {
   position: absolute;
@@ -521,5 +512,4 @@ padding: 1.5rem 1rem;
  display: block;
  padding: 0.8rem;
 }
-
 }
